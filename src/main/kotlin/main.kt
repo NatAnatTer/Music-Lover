@@ -1,20 +1,17 @@
 var scan = java.util.Scanner(System.`in`)
 fun main() {
-    val user1 = "111"
-    val user2 = "222"
     var isConstantlyUser = false
     val minPrice = 1000_00
     val maxPrise = 10_000_00
-    var previousSum = 0
-    var totalSumWithDiscount: Double = 0.0
+    var totalSumWithDiscount = 0.0
     println("Введите loin пользователя:")
     val user = scan.nextLine()
-    if (user.equals(user1)) {
-    } else {
+
+    if (user.equals("222")) {
         isConstantlyUser = true
     }
     println("Введите предыдущую сумму в копейках:")
-    previousSum = scan.nextInt()
+   var previousSum = scan.nextInt()
 
     println("Введите сумму покупки в копейках:")
     while (true) {
